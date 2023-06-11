@@ -6,6 +6,11 @@ int main()
 {
   int d1, d2, sum;
   srand(time(NULL));
+  char name[20];
+  
+  printf("What is your name?\n");
+  scanf("%s", name);
+  printf("Hello, %s!\n", name);
   
   d1 = rand()%6;
   if(d1 == 0) d1 = 6;
